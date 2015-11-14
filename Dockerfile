@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.2
+FROM gliderlabs/alpine:latest
 RUN apk add --update \
     python \
     python-dev \
@@ -6,4 +6,3 @@ RUN apk add --update \
     build-base \
   && rm -rf /var/cache/apk/*
 RUN pip install steelscript paramiko steelscript.cmdline steelscript.steelhead
-
