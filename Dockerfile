@@ -6,3 +6,4 @@ RUN apk add --update \
     build-base \
   && rm -rf /var/cache/apk/*
 RUN pip install steelscript paramiko steelscript.cmdline steelscript.steelhead
+RUN steel install --steelhead
